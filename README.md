@@ -62,6 +62,6 @@ The important components of the datapath are summarized below:
 * PV=nRT has four different ROM modules for each mode: manual, mole to temperature, mole to volume, and temperature to volume. Each PV=nRT contains mif data that represents the different ideal gas law relationship we are looking to demonstrate. There is an always block, essentially a multiplexer, that chooses between the three bit color output of each module based on the mode.  
 * The output of the module is essentially the x coordinate, the y coordinate, and the color which are to be modified by the VGA display. There is an always block, again essentially a multiplexer, that chooses between what x, y, and color to load based on the enable signals from the FSM.
 
-
+![alt text](https://lh3.googleusercontent.com/wxOqVu7QOo0hdE8vJFD5uGKftpUYIRH4Jy67BTDnQDwN3e2qParLP4O9h-S5o3rauqajtdhoH9p4rn1YaJS6fSMq0s63S3ZIt2TKf6rm4H2gpBi9eyE_oJW6hLXbeIPEJEXTbaSYXPtsFiwcH27gJe1Ge6Q6-5CbSmgORQNIrWccr_0uIHE9CQ5sfdxjjkInKG-RbFIaPOiCooIaZHMnrHZ-Qv0iZNFeXCu4aIJZCrhWH_QJXIbrIrpaL9e2n_cqav54HKJxX0QdaH2uNMK65DyC1NBwqTcIij9_Y57Y_-m23yHI-UpsYRnCv1wFZwFud9EsemVTboBJWDLw8t3WNo_l133EQsBxVElXmfI2FjTC7j69cPL9e8obhV_fLdGEah3ZlLtz_QE_xPN_tCQTBDzH3Wc_OwILp_Xj9n2DVQorHYXLXjoxxlRA3cubU_ZggQCbXKaFKH2FSHlOYbY3b9Jisd4kEKudqmF0eq7aLyhsXpSOcHuwKiPSSqxRZjddXbWU--TdOJ0gRfZBu2CYDQ9r1dDxkPRVCuGjchqVeg1LhUzRhHqOpNGd2FiFL1YMjHe6VX45iMnCMnbcmwsLOnyWRj5v3U1GwnMW-krtLmYCjCExfJFWmE6uBSzLLfn6hgMcUcEKCoY8NR0oJT5GO0VYgkx01bGpYi9-vEOX_GIEq7SDmk0SvBw=w1060-h794-no)
 
 
