@@ -4,8 +4,8 @@ Both of us are physics enthusiasts, and we decided to use this project as an opp
 We wanted to replicate the ideal gas law simulators that we saw in high school with Verilog. Since the purpose of these simulators are to provide students with a better intuition of the ideal gas law, we wanted to be able to show the different relationships between each variable with appropriate visual aid. To demonstrate the different relationships, we wanted to be able to test the relation between one independent and dependent variable, while keeping other variables constant. Furthermore, since there are many ideal gas law simulators available online, we had a way to benchmark our design against existing ones.
 
 
-##“Main” Module:
-The “main” FSM control path:
+## “Main” Module:
+### The “main” FSM control path:
 The control path for the “main” FSM consists of the following states:
 Reset_Pos: This is the reset state where everything on the screen is reset.
 DrawWait: Everything including the particles, the piston, the pressure meter, and the PV=NRT equation are drawn in this state.
@@ -14,7 +14,7 @@ EraseWait: This state makes sure we wait long enough for everything to be erased
 UpdateShiftReg: This state updates the contents of the direction registers to be described in the data path below.
 UpdatePos: This state updates the positions of the particles
 
-##The “main” datapath FSM:
+### The “main” datapath FSM:
 The important components of the datapath for the main FSM are summarized below:
 The drawWaitCounter, rateDividerCounter, and eraseWaitCounter. These counters make the circuit wait (i.e. not do any action) until everything has been drawn on the screen,  until the screen has waited long enough before updating, and until everything has been erased before updating, respectively.
 Each particle has one of the following:
