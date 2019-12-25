@@ -7,12 +7,12 @@ We wanted to replicate the ideal gas law simulators that we saw in high school w
 ## “Main” Module:
 ### The “main” FSM control path:
 The control path for the “main” FSM consists of the following states:
-Reset_Pos: This is the reset state where everything on the screen is reset.
-DrawWait: Everything including the particles, the piston, the pressure meter, and the PV=NRT equation are drawn in this state.
-RateDividerWait: In this state, we make the screen stay static for a certain amount of time; this controls how fast/slow we see things updating and moving on the screen.
-EraseWait: This state makes sure we wait long enough for everything to be erased before updating the screen so that we don’t draw new items on top of existing items
-UpdateShiftReg: This state updates the contents of the direction registers to be described in the data path below.
-UpdatePos: This state updates the positions of the particles
+* Reset_Pos: This is the reset state where everything on the screen is reset.
+* DrawWait: Everything including the particles, the piston, the pressure meter, and the PV=NRT equation are drawn in this state.
+* RateDividerWait: In this state, we make the screen stay static for a certain amount of time; this controls how fast/slow we see things updating and moving on the screen.
+* EraseWait: This state makes sure we wait long enough for everything to be erased before updating the screen so that we don’t draw new items on top of existing items
+* UpdateShiftReg: This state updates the contents of the direction registers to be described in the data path below.
+* UpdatePos: This state updates the positions of the particles
 
 ### The “main” datapath FSM:
 The important components of the datapath for the main FSM are summarized below:
